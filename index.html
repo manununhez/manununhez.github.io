@@ -716,19 +716,21 @@
 									<div class="col-md-12">
 										<div class="mu-contact-bottom">
 											<div id="form-messages"></div>
-											<form action="https://formspree.io/xaydjawl" method="POST">
-												<label>
-													Your email:
-													<input type="text" name="_replyto">
-												</label>
-												<label>
-													Your message:
-													<textarea name="message"></textarea>
-												</label>
-
-												<!-- your other form fields go here -->
-
-												<button type="submit">Send</button>
+											<form action="https://formspree.io/xaydjawl" method="POST" class="mu-contact-form">
+												<div class="form-group">                
+													<input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+												</div>
+												<div class="form-group">                
+													<input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+												</div>              
+												<div class="form-group">
+													<textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+												</div>
+												<div class="form-group"></div>
+													<input type="hidden" name="_next" value="thanks.html"/>
+													<input type="text" name="_gotcha" style="display:none" />
+												</div>
+												<button type="submit" class="mu-send-msg-btn"><span>SEND MESSAGE</span></button>
 											</form>
 										</div>
 									</div>
